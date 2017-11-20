@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="mainstyle.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <title>Wiskunde</title>
+
+
+</head>
+<body>
+<div class="site-wrapper">
+
+    <p>Klik hier om de wortel te berekenen</p>
+    <button onclick="Wortel()">Klik hier</button>
+    <p id="wortel"></p>
+   <script>
+
+       function Wortel() {
+           var invoer = prompt("Wortel van:");
+           if (invoer != null) {
+               getal = Math.sqrt(invoer);
+               alert(getal);
+               document.getElementById("wortel").innerHTML =
+                   "Wortel van " + invoer + " = " + getal;
+           }
+       }
+
+   </script>
+</div>
+</body>
+</html>
