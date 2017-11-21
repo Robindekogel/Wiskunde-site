@@ -1,3 +1,61 @@
 .site-wrapper-inner {
     background-image: url('img/book-1853677_1920.jpg');
+ }
+
+/*--------------------------------------------CSS-PAGE1--------------------------------------------*/
+
+.site-wrapper-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url('img/algebra-1238600_1920.jpg');
+ }
+
+.Wortelbox {
+    background: #ffffff5e;
+    border: 1px solid #e6e0d0;
+    padding: 8%;
+    color: #000;
+    margin-bottom: 5%;
+    margin-top: 5%;
+ }
+
+.Wortelbox button {
+    background: #00000061;
+    color: #fff;
+    border: none;
+    width: 110px;
+    padding: 5.5px;
+ }
+
+.Wortelbox p#wortel {
+    margin-top: 5%;
+ }
+
+
+.Wortelbox2 {
+    background: #ffffff5e;
+    border: 1px solid #e6e0d0;
+    padding: 8%;
+    color: #000;
+ }
+
+input#txt2 {
+    margin-right: 1%;
 }
+
+input[type="button"] {
+    background: #7b7b7b;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+}
+
+input[type="text"] {
+    width: 25%;
+    margin: 0px 5px 0px 5px;
+}
+
+
+/*--------------------------------------------CSS-PAGE1--------------------------------------------*/
+
