@@ -2,6 +2,17 @@
     background-image: url('img/book-1853677_1920.jpg');
  }
 
+a:active, a:hover {
+    outline-width: 0;
+    color: #00000078 !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+    color: #00000080 !important;
+}
+
+
 /*--------------------------------------------CSS-PAGE1--------------------------------------------*/
 
 .site-wrapper-inner2 {
@@ -57,5 +68,31 @@ input[type="text"] {
 }
 
 
-/*--------------------------------------------CSS-PAGE1--------------------------------------------*/
+/*--------------------------------------------CSS-PAGE2--------------------------------------------*/
+.site-wrapper-inner3 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url('img/accountant-1238598_1920.jpg');
+}
 
+
+
+.pythagorasblk {
+    background: #ffffff9e;
+    border: 1px solid #e6e0d0;
+    color: #000;
+}
+
+input.press {
+    background: #7b7b7b;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+}
+
+td {
+    padding: 1.5%;
+}
+
+/*--------------------------------------------CSS-PAGE1--------------------------------------------*/

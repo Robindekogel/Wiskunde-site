@@ -3,19 +3,148 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" contcover.cent="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
+    <link rel="icon" href="img/favicon.png">
     <title>Wiskunde</title>
-
-
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="mainstyle.css" rel="stylesheet">
-
-
     <link href="cover.css" rel="stylesheet">
 </head>
+
 <body>
 
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner3">
+
+        <div class="cover-container">
+
+            <header class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Wiskunde</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="Page1.html">Wortel berekenen</a>
+                        <a class="nav-link" href="Page2.html">Pythagoras Rekenmachine</a>
+                        <a class="nav-link" href="Page3.html">Page 3</a>
+                        <a class="nav-link" href="Page4.html">Page 4</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main role="main" class="inner cover">
+                <h1 class="cover-heading"></h1>
+                <p class="lead"></p>
+                <p class="lead">
+                <div class="pythagorasblk">
+                  <table border="0" cellspacing="0" cellpadding="0"><tr>
+                    <td width="900">
+                        <h1>Pythagoras Rekenmachine</h1>
+                        <b> Gegevens Driehoek</b>
+                        <h4>Vul de waarde van driehoek zijde A en B in</h4>
+                        <form>
+                            <table border="0" cellspacing="5" cellpadding="0" class="main">
+                                <tr>
+                                    <td>
+                                        a Rechthoekszijde
+                                    </td>
+                                    <td>
+                                        <input id="a" tabindex="1" />
+                                    </td>
+                                    <td>
+                                        Hoogte
+                                    </td>
+                                    <td>
+                                        <input id="h" readonly="readonly" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        b Rechthoekszijde
+                                    </td>
+                                    <td>
+                                        <input id="b" tabindex="2" />
+                                    </td>
+                                    <td>
+                                        Omtrek
+                                    </td>
+                                    <td>
+                                        <input id="u" readonly="readonly" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        c Schuine zijde
+                                    </td>
+                                    <td>
+                                        <input id="c" tabindex="3" />
+                                    </td>
+                                    <td>
+                                        Oppervlakte
+                                    </td>
+                                    <td>
+                                        <input id="f" readonly="readonly" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Nieuwe schuine zijde
+                                    </td>
+                                    <td>
+                                        <input id="p" readonly="readonly" />
+                                    </td>
+                                    <td>
+                                        Nieuwe schuine zijde
+                                    </td>
+                                    <td>
+                                        <input id="q" readonly="readonly" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Hoek A&deg;
+                                    </td>
+                                    <td>
+                                        <input id="alpha" readonly="readonly" />
+                                    </td>
+                                    <td>
+                                        Hoek B&deg;
+                                    </td>
+                                    <td>
+                                        <input id="beta" readonly="readonly" />
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <input type="button" value="Calculate" onclick="Calculation()" class="press" />
+                            <input type="reset" value="Clear" class="press" />
+                        </form>
+                    </td>
+                    <td style="padding-left:10px">
+                    </td>
+                </tr></table>
+            </div>
+        </main>
+
+        <footer class="mastfoot">
+            <div class="inner">
+                <p><a href="https://getbootstrap.com/">Robin, Kevin, Damien, Ahmad | </a><a href="https://twitter.com/mdo">ROC Flevoland - 2017</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="Pythagoras.js"></script>
+<script src="./root.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="./popper.min.js"></script>
+<script src="./bootstrap.min.js"></script>
 </body>
 </html>
