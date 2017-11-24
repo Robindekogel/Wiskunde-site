@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Pythagoras Rekenmachine</title>
+
+    <script>
+
+        function Calculation()
+        {
+            count=0;
+            if (document.getElementById("a").value!="")
+                count++;
+            if (document.getElementById("b").value!="")
+                count++;
+            if (document.getElementById("c").value!="")
+                count++;
+            if (count!=2)
+            {
+                return false;
+            }
+            aa=document.getElementById("a").value.replace(",",".");
+            bb=document.getElementById("b").value.replace(",",".");
+            cc=document.getElementById("c").value.replace(",",".");
+            if (aa=="")
+            {
+                aa=Math.sqrt(cc*cc-bb*bb);
+                document.getElementById("a").value=aa;
+            }
+            if (bb=="")
+            {
+                bb=Math.sqrt(cc*cc-aa*aa);
+                document.getElementById("b").value=bb;
+            }
+            if (cc=="")
+            {
+                cc=Math.sqrt(aa*aa+bb*bb);
+                document.getElementById("c").value=cc;
+            }
+            pp=(aa*aa)/cc;
+            qq=(bb*bb)/cc;
+            hh=Math.sqrt(pp*qq);
+            document.getElementById("h").value=hh;
+            uu=eval(aa)+eval(bb)+eval(cc);
+            document.getElementById("u").value=uu;
+            ff=(aa*bb)/2;
+            document.getElementById("f").value=ff;
+            document.getElementById("p").value=pp;
+            document.getElementById("q").value=qq;
+
+            document.getElementById("alpha").value=180/Math.PI*Math.acos((bb*bb-(-cc*cc)-aa*aa)/(2*bb*cc)),4;
+            document.getElementById("beta").value=180/Math.PI*Math.acos((aa*aa-(-cc*cc)-bb*bb)/(2*aa*cc)),4;
+
+        }
+    </script>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner2">
+
+        <div class="cover-container">
+
+            <header class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Wiskunde</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="Page1.html">Wortel berekenen</a>
+                        <a class="nav-link" href="Page2.html">Page 2</a>
+                        <a class="nav-link" href="Page3.html">Page 3</a>
+                        <a class="nav-link" href="Page4.html">Page 4</a>
+                    </nav>
+                </div>
+            </header>
+
+            <center>   <table border="0" cellspacing="0" cellpadding="0"><tr>
+                <td width="600">
+                    <h1>Pythagoras Rekenmachine</h1>
+                    <b> Gegevens Driehoek</b>
+                        <h4>Vul de waarde van driehoek zijde A en B in</h4>
+                    <form>
+                        <table border="0" cellspacing="5" cellpadding="0" class="main">
+                            <tr>
+                                <td>
+                                    a Rechthoekszijde
+                                </td>
+                                <td>
+                                    <input id="a" tabindex="1" />
+                                </td>
+                                <td>
+                                    Hoogte
+                                </td>
+                                <td>
+                                    <input id="h" readonly="readonly" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    b Rechthoekszijde
+                                </td>
+                                <td>
+                                    <input id="b" tabindex="2" />
+                                </td>
+                                <td>
+                                    Omtrek
+                                </td>
+                                <td>
+                                    <input id="u" readonly="readonly" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    c Schuine zijde
+                                </td>
+                                <td>
+                                    <input id="c" tabindex="3" />
+                                </td>
+                                <td>
+                                    Oppervlakte
+                                </td>
+                                <td>
+                                    <input id="f" readonly="readonly" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     Nieuwe schuine zijde
+                                </td>
+                                <td>
+                                    <input id="p" readonly="readonly" />
+                                </td>
+                                <td>
+                                    Nieuwe schuine zijde
+                                </td>
+                                <td>
+                                    <input id="q" readonly="readonly" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Hoek A&deg;
+                                </td>
+                                <td>
+                                    <input id="alpha" readonly="readonly" />
+                                </td>
+                                <td>
+                                    Hoek B&deg;
+                                </td>
+                                <td>
+                                    <input id="beta" readonly="readonly" />
+                                </td>
+                            </tr>
+
+                        </table>
+                        <input type="button" value="Calculate" onclick="Calculation()" class="press" />
+                        <input type="reset" value="Clear" class="press" />
+                    </form>
+                </td>
+                <td style="padding-left:10px">
+                </td>
+            </tr></table>
+        </div>
+        <footer class="mastfoot">
+            <div class="inner">
+                <p><a href="https://getbootstrap.com/">Robin, Kevin, Damien, Ahmad | </a><a href="https://twitter.com/mdo">ROC Flevoland - 2017</a>.</p>
+            </div>
+        </footer>
+</body>
+</html>
